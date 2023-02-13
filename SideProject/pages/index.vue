@@ -91,20 +91,25 @@
 <template>
   <div>
     <div class="login">
+    
       <div class="login__container">
+       
         <div class="container_for_input">
-          <div class="container_for_input__title">
-            <h1>Sign in</h1>
-          </div>
-          <div class="container_for_input__input">
-            <input type="text" placeholder="Username" />
-          </div>
-          <div class="container_for_input__input">
-            <input type="password" placeholder="Password" />
-          </div>
-          <div class="container_for_input__button">
-            <button>Sign in</button>
-          </div>
+            <div class="login__container__logo">
+                <img src="~/assets/images/login.png" alt="logo" />
+            </div>
+            <div class="container_for_input__title">
+                <h1>Sign in</h1>
+            </div>
+            <div class="container_for_input__input">
+                <input type="text" placeholder="Username" />
+            </div>
+            <div class="container_for_input__input">
+                <input type="password" placeholder="Password" />
+            </div>
+            <div class="container_for_input__button">
+                <button>Sign in</button>
+            </div>
         </div>
       </div>
     </div>
