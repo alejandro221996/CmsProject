@@ -27,8 +27,7 @@
       padding: 0;
   }
   navbar .navbar__menu ul li a {
-    text-decoration: none;
-      cursor: default;
+      text-decoration: none;
       color: #fff;
       font-size: 1.3rem;
   }
@@ -48,6 +47,28 @@
   {
     font-weight: 100;
   }
+  aside {
+    width: 15%;
+    padding-left: 15px;
+    float: left;
+    background-color: black;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: #fff;
+  }
+  aside ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  aside ul li a:hover {
+    color: #17b0eb;
+  }
+  aside ul li {
+    margin-bottom: 1rem;
+  }
 </style>
 <template>
   <div>
@@ -60,6 +81,15 @@
       </ul>
     </div>
   </navbar>
+  <aside>
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+
+  </ul>
+
+  </aside>
   <div>
     <slot/>
   </div>
