@@ -12,26 +12,26 @@
       justify-content: center;
       height: 100vh;
   }
-  navbar{
+  .navbar{
       display: flex;
       justify-content: center;
       padding: 2rem;
       background-color: #000;
     
   }
-  navbar .navbar__menu ul{
+  .navbar .navbar__menu ul{
       display: flex;
       list-style: none;
       gap: 5rem;
       margin: 0;
       padding: 0;
   }
-  navbar .navbar__menu ul li a {
+  .navbar .navbar__menu ul li a {
       text-decoration: none;
       color: #fff;
       font-size: 1.3rem;
   }
-    navbar .navbar__menu ul li a:hover {
+  .navbar .navbar__menu ul li a:hover {
       color: #17b0eb;
   }
   footer {
@@ -71,8 +71,7 @@
   }
 </style>
 <template>
-  <div>
-   <navbar>
+  <div class="navbar">
     <div class="navbar__menu">
       <ul>
         <li><a href="#">Home</a></li>
@@ -80,15 +79,13 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-  </navbar>
+  </div>
   <aside>
    <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
-
   </ul>
-
   </aside>
   <div>
     <slot/>
@@ -96,5 +93,4 @@
   <footer>
       <h2>Footer</h2>
   </footer>
-  </div>
 </template>
