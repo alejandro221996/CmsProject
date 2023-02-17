@@ -10,7 +10,7 @@
 </style>
 <template>
     <div class="container">
-        <h1>Dashboard for administration</h1>.
+        <h1 class="text-3xl">Dashboard for administration</h1>.
     </div>  
 </template>
 <script setup>

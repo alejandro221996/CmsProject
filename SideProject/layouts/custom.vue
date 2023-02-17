@@ -91,6 +91,6 @@
     <slot/>
   </div>
   <footer>
-      <h2>Footer</h2>
+      <h2 class="text-3xl">Footer</h2>
   </footer>
 </template>

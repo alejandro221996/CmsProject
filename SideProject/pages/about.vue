@@ -1,6 +1,5 @@
 <style>
   .container {
-      max-width: 800px;
       width: 960px;
       margin: 0 auto;
       display: flex;
@@ -9,7 +8,7 @@
   }
 </style>
 <template>
-    <div class="container">
+    <div class="container max-w-3xl ">
         <h1>About page</h1>.
     </div>  
 </template>
