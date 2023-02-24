@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./node_modules/flowbite.{js,ts}",
+  ],
   darkMode: 'class',
   safelist: [
     {
@@ -38,6 +40,6 @@ module.exports = {
     },
   },
   plugins: [
-    //require('@tailwindcss/forms')
+    require('flowbite')
   ],
 }
