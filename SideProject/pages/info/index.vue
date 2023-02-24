@@ -10,5 +10,7 @@ definePageMeta({
 });
 </script>
 <template>
-    <h1 class="text-3xl">Dashboard for administration</h1>.
+    <div class="mt-8">
+        <h1 class="text-3xl">Add new about info</h1>         
+    </div>
 </template>
