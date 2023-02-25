@@ -187,7 +187,7 @@ definePageMeta({
             </FormKit>
             <div v-else class="completeLogin">User was created successfully 👍</div>
             <div class="flex h-24 w-3/4 justify-center items-center mt-4 text-slate-400">
-                DON'T HAVE AN ACCOUNT? <NuxtLink class="items-center hover:text-sky-600 ml-2 text-slate-900" to="auth/register"> SIGN UP</NuxtLink>
+                DON'T HAVE AN ACCOUNT? <NuxtLink class="items-center hover:text-sky-600 ml-2 text-slate-900" to="/auth/register"> SIGN UP</NuxtLink>
             </div>
         </div>
       </div>
