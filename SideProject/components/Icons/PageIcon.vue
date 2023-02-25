@@ -8,7 +8,7 @@
     .cls-4{fill:#6c2e7c;}
 </style>
 <template>
-    <div>
+    <div class="grow_animation">
         <NuxtLink to="/pages">
             <svg width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 

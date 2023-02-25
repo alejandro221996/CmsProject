@@ -1,9 +1,52 @@
-<style>
-p{
-  font-family: ;
-}
+<script setup>
 
-</style>
+const User = {
+  email: "pruena_test_123@gmail.com",
+  first_name: "Prueba",
+  last_name: "Test",
+  username: "prueba_test_123",
+  rol: "Admin",
+  company: "Body Shop",
+
+};
+const asideOptions = [
+  {
+    name: 'Home',
+    link: '/home',
+  },
+  {
+    name: 'Info',
+    link: '/info',
+  },
+  {
+    name: 'Contact',
+    link: '/contact',
+  },
+  {
+    name: 'Posts',
+    link: '/posts',
+  },
+  {
+    name: 'Media',
+    link: '/media',
+  },
+  {
+    name: 'Pages',
+    link: '/pages',
+  },
+  {
+
+    name: 'Settings',
+    link: '/settings'
+  },
+  {
+    name: 'Users',
+    link: '/users'
+  }
+];
+
+</script>
+
 <template>
 <!-- container with one aside column and one main container -->
 <div class="grid grid-cols-11  h-screen">
@@ -15,8 +58,8 @@ p{
             <div class="w-full h-24 flex">
               <img class="w-20 h-20" src="~/assets/images/login.png" alt="logo" />
               <section class="flex flex-col justify-center pb-4">
-                <p class="flex text-base items-center font-semibold text-gray-700 font-mono">Body Shop</p>
-                <p class="flex text-base items-center  font-semibold text-gray-500 font-mono">Nicole(Admin)</p>
+                <p class="flex text-base items-center font-semibold text-gray-700 font-mono">{{ User.company }}</p>
+                <p class="flex text-base items-center  font-semibold text-gray-500 font-mono">{{User.first_name}}({{ User.rol }})</p>
               </section>
               <picture class="flex justify-end items-center w-full pr-4">
                 <IconsArrowIcon path="/"/>
@@ -72,73 +115,3 @@ p{
     </main>
 </div>
 </template>
-<script >
-import {ref} from 'vue'
-
-export default {
-  name:"custom",
-  setup() {
-    const menuPosts = ref(false);
-    const togglePostsMenu = () => {
-      menuPosts.value = !menuPosts.value;
-    };
-    const menuPages = ref(false);
-    const togglePagesMenu = () => {
-      console.log("togglePagesMenu")
-      menuPages.value = !menuPages.value;
-    };
-    return {
-      menuPosts,
-      togglePostsMenu,
-      menuPages,
-      togglePagesMenu
-    };
-  },
-  computed: {
-    multiple_value_boolean() { 
-      return "Posts" || "Pages"
-    } 
-  },
-  data() {
-    const asideOptions=[
-      {
-        name: 'Home',
-        link: '/home',
-      },
-      {
-        name: 'Info',
-        link: '/info',
-      },
-      {
-        name: 'Contact',
-        link: '/contact',
-      },
-      {
-        name: 'Posts',
-        link: '/posts',
-      },
-      {
-        name: 'Media',
-        link: '/media',
-      },
-      {
-        name: 'Pages',
-        link: '/pages',
-      },
-      {
-
-        name: 'Settings',
-        link: '/settings'
-      },
-      {
-        name: 'Users',
-        link: '/users'
-      }
-    ]
-    return {
-      asideOptions,
-    };
-  }
-}
-
-</script>

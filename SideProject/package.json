@@ -12,6 +12,7 @@
     "nuxt": "^3.2.0"
   },
   "dependencies": {
+    "@formkit/addons": "^1.0.0-beta.15",
     "@formkit/nuxt": "^1.0.0-beta.15",
     "@nuxtjs/google-fonts": "^2.0.0",
     "@revolist/vue-datagrid": "^4.3.0-next.11",

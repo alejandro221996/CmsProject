@@ -26,6 +26,9 @@ const submitHandler = async (data) => {
     setErrors('registerForm', ['The server didn’t like our request.'])
   }
 }
+definePageMeta({
+  layout: "auth-layout",
+});
 </script>
 <template>
     <div class="h-screen w-full bg-black flex justify-center items-center">

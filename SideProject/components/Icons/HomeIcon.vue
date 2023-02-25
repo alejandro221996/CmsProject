@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="grow_animation">
         <NuxtLink to="/">
             <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <path d="M855.04 815.36c0 17.92-16.64 32-38.4 32H226.56c-20.48 0-38.4-14.08-38.4-32V371.2c0-17.92 16.64-32 38.4-32h590.08c20.48 0 38.4 14.08 38.4 32v444.16z" fill="#E1E0A6" />

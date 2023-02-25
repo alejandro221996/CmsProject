@@ -1,12 +1,9 @@
 <script setup>
-
 const Users = await fetch("https://rickandmortyapi.com/api/character?page=1")
     .then((res) => res.json());
 const UserObj = Users.results
 //Count the number of users
 const count = UserObj.length;
-
-
 </script >
 <template>
     <div>
@@ -21,7 +18,8 @@ const count = UserObj.length;
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Role</th>
-                        <th>Actions</th>
+                        <th class="text-center">Edit</th>
+                        <th class="text-center">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,8 +29,18 @@ const count = UserObj.length;
                         <td>{{user.gender}}</td>
                         <td>{{user.species}}</td>
                         <td>{{user.name}}</td>
-                        <td>
-                            <NuxtLink :to="`/users/${user.id}`" class="text-blue-500">View</NuxtLink>
+                        <td class="">
+                            <NuxtLink :to="`/users/${user.id}`" class="text-blue-500 flex justify-center items-center">
+                                <IconsEditIcon/>
+                            </NuxtLink>
+                            <!-- Delete -->
+                        </td>
+                        <td class="">
+                            <section class="flex justify-center items-center ">
+                                <button class="" @click="deleteRec">
+                                    <IconsDeleteIcon/>
+                                </button>
+                            </section>
                         </td>
                     </tr>
                 </tbody>

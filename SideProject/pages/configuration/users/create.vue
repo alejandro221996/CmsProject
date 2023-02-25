@@ -61,7 +61,7 @@ definePageMeta({
                         'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
                         }"
                         :messages-class="{
-                        'text-red-500': true,
+                        'text-red-500 p-4': true,
                         }"
                         :label-class="{
                             'text-xl p-4 font-mono':true
@@ -73,10 +73,10 @@ definePageMeta({
                 <FormKit label="Username" 
                         outer-class="mt-4"
                         :input-class="{
-                        'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                            'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
                         }"
                         :messages-class="{
-                        'text-red-500': true,
+                            'text-red-500 p-4': true,
                         }"
                         :label-class="{
                             'text-xl p-4 font-mono':true
@@ -91,7 +91,7 @@ definePageMeta({
                         'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
                         }"
                         :messages-class="{
-                        'text-red-500': true,
+                        'text-red-500 p-4': true,
                         }"
                         :label-class="{
                             'text-xl p-4 font-mono':true
@@ -106,7 +106,7 @@ definePageMeta({
                         'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
                         }"
                         :messages-class="{
-                        'text-red-500': true,
+                        'text-red-500 p-4': true,
                         }"
                         :label-class="{
                             'text-xl p-4 font-mono':true
@@ -122,5 +122,6 @@ definePageMeta({
                 </div>
             </div>
         </section>
+    
     </div>
 </template>

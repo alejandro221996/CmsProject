@@ -121,7 +121,10 @@ const submitHandlerLogin = async (data) => {
     } else {
       setErrors('loginForm', ['The server didn’t like our request.'])
     }
-  }
+}
+definePageMeta({
+  layout: "auth-layout",
+});
 </script>
 <template>
     <div class="login">

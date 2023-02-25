@@ -23,7 +23,7 @@ definePageMeta({
 </script>
 <template>
     <div class="mt-8">
-        <h1 class="text-3xl">Add new post</h1>
+        <h1 class="text-3xl">Add new page</h1>
         <FormKit
             type="form"
             #default="{ value }"
@@ -56,7 +56,7 @@ definePageMeta({
                         'border-2 border-gray-300 p-2 w-full': true,
                     }"
                     :messages-class="{
-                    'text-red-500': true,
+                    'text-red-500 p-4': true,
                     }"
                     :label-class="{
                         'text-xl':true

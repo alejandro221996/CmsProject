@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="grow_animation">
         <NuxtLink to="/contact">
             <svg width="35px" height="35px" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 

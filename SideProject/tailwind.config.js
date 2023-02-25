@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./node_modules/flowbite.{js,ts}",
+    "./node_modules/flowbite/**/*.js"
   ],
   darkMode: 'class',
   safelist: [
@@ -37,6 +38,9 @@ module.exports = {
             900: "#15202b",
           },
       },
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+      }
     },
   },
   plugins: [

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="grow_animation">
         <NuxtLink to="/settings">
             <svg width="35px" height="35px" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" d="M14 20C17.3137 20 20 17.3137 20 14C20 10.6863 17.3137 8 14 8C10.6863 8 8 10.6863 8 14C8 17.3137 10.6863 20 14 20ZM18 14C18 16.2091 16.2091 18 14 18C11.7909 18 10 16.2091 10 14C10 11.7909 11.7909 10 14 10C16.2091 10 18 11.7909 18 14Z" fill="#000000" fill-rule="evenodd"/>
