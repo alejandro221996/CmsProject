@@ -32,16 +32,16 @@ definePageMeta({
           accept=".pdf,.doc,.docx,.xml,.md,.csv"
           multiple="true"
           :input-class="{
-            ' border-2 w-2/5 border-gray-400 rounded-full p-4 ': true,
+            ' border-2 w-2/5 border-gray-400 rounded-full p-4 font-mono': true,
           }"
           :no-files-class="{
-            'text-red-500 p-4': true,
+            'text-red-500 p-4 font-mono': true,
           }"
           :outer-class="{
             'mb-4 mt-4': true,
           }"
           :messages-class="{
-            'text-red-500 p-4': true,
+            'text-red-500 p-4 font-mono': true,
           }"
           :label-class="{
             'text-xl p-4 font-mono':true

@@ -1,6 +1,6 @@
 <template>
     <div class="grow_animation">
-        <NuxtLink to="/posts">
+        <NuxtLink :to="`${path}`">
             <svg height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
             viewBox="0 0 502 502" xml:space="preserve">
                 <g>
@@ -33,3 +33,7 @@
     </div>
     
 </template>
+<script setup>
+const {path} =defineProps(['path'])
+
+</script>

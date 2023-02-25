@@ -12,36 +12,36 @@ const User = {
 const asideOptions = [
   {
     name: 'Home',
-    link: '/home',
+    link: '/configuration/home',
   },
   {
     name: 'Info',
-    link: '/info',
+    link: '/configuration/info',
   },
   {
     name: 'Contact',
-    link: '/contact',
+    link: '/configuration/contact',
   },
   {
     name: 'Posts',
-    link: '/posts',
+    link: '/configuration/posts',
   },
   {
     name: 'Media',
-    link: '/media',
+    link: '/configuration/media',
   },
   {
     name: 'Pages',
-    link: '/pages',
+    link: '/configuration/pages',
   },
   {
 
     name: 'Settings',
-    link: '/settings'
+    link: '/configuration/settings'
   },
   {
     name: 'Users',
-    link: '/users'
+    link: '/configuration/users'
   }
 ];
 
@@ -71,31 +71,31 @@ const asideOptions = [
                     <article class="flex gap-6 justify-center ">
                       <!-- ICON -->
                       <div v-if="option.name==='Pages'">
-                        <IconsPageIcon/>
+                        <IconsPageIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else-if="option.name==='Media'">
-                        <IconsMediaIcon/>
+                        <IconsMediaIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else-if="option.name==='Contact'">
-                        <IconsContactIcon/>
+                        <IconsContactIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else-if="option.name==='Info'">
                         <NuxtLink class="hover:bg-sky-600 " :to="option.link">
-                          <IconsInfoIcon/>
+                          <IconsInfoIcon :path="`${option.link}`"/>
                         </NuxtLink>
                       </div>
                       <div class="flex" v-else-if="option.name==='Posts'">
-                        <IconsPostsIcon/>
+                        <IconsPostsIcon :path="`${option.link}`"/>
                       
                       </div>
                       <div v-else-if="option.name==='Home'">
-                        <IconsHomeIcon/>
+                        <IconsHomeIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else-if="option.name==='Users'">
-                        <IconsUserIcon/>
+                        <IconsUserIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else>
-                        <IconsSettingsIcon/>
+                        <IconsSettingsIcon :path="`${option.link}`"/>
                       </div>
                       <p class=" flex items-center text-base font-semibold text-gray-700 font-mono">{{option.name}}</p>
                       <picture class="flex  items-center w-full pl-24" v-if="option.name==='Posts'||option.name==='Pages'||option.name==='Users'">

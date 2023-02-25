@@ -38,8 +38,11 @@ module.exports = {
             900: "#15202b",
           },
       },
+      height: {
+        'height-31rem': '31rem',
+      },
       backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'hero-pattern': "url('../assets/images/backgroundImage.jpeg')",
       }
     },
   },

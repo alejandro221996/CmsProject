@@ -40,88 +40,86 @@ definePageMeta({
 });
 </script>
 <template>
-    <div>
-        <h1 class="text-3xl mb-4 font-mono font-bold">Create a new user</h1>
-        <section class="border-2 border-gray-300 rounded-lg p-10">
-            <h1 class="text-2xl mb-10 font-mono font-semibold">Personal Information</h1>
-            <FormKit
-                type="form"
-                v-if="!complete"
-                id="registerForm"
-                #default="{ value }"
-                @submit="submitRecHandler"
-                :submit-attrs="{
-                  inputClass: 'w-72 h-12 bg-blue-500 text-white font-bold text-xl rounded-full mt-4',
-                
-                }"
-                
-            >
-                <FormKit label="Email" 
-                        :input-class="{
+    <h1 class="text-3xl mb-4 font-mono font-bold">Create a new user</h1>
+    <section class="border-2 border-gray-300 rounded-lg p-10">
+        <h1 class="text-2xl mb-10 font-mono font-semibold">Personal Information</h1>
+        <FormKit
+            type="form"
+            v-if="!complete"
+            id="registerForm"
+            #default="{ value }"
+            @submit="submitRecHandler"
+            :submit-attrs="{
+                inputClass: 'w-72 h-12 bg-blue-500 text-white font-bold text-xl rounded-full mt-4',
+            
+            }"
+            
+        >
+            <FormKit label="Email" 
+                    :input-class="{
+                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    }"
+                    :messages-class="{
+                    'text-red-500 p-4': true,
+                    }"
+                    :label-class="{
+                        'text-xl p-4 font-mono':true
+                    }"
+                    validation="required"
+                    validation-visibility="dirty"
+                    type="text" name="email" placeholder="Email..."
+            />
+            <FormKit label="Username" 
+                    outer-class="mt-4"
+                    :input-class="{
                         'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
-                        }"
-                        :messages-class="{
+                    }"
+                    :messages-class="{
                         'text-red-500 p-4': true,
-                        }"
-                        :label-class="{
-                            'text-xl p-4 font-mono':true
-                        }"
-                        validation="required"
-                        validation-visibility="dirty"
-                        type="text" name="email" placeholder="Email..."
-                />
-                <FormKit label="Username" 
-                        outer-class="mt-4"
-                        :input-class="{
-                            'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
-                        }"
-                        :messages-class="{
-                            'text-red-500 p-4': true,
-                        }"
-                        :label-class="{
-                            'text-xl p-4 font-mono':true
-                        }"
-                        validation="required"
-                        validation-visibility="dirty"
-                        type="text" name="username" placeholder="Username..."
-                />
-                <FormKit label="First Name" 
-                        outer-class="mt-4"
-                        :input-class="{
-                        'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
-                        }"
-                        :messages-class="{
-                        'text-red-500 p-4': true,
-                        }"
-                        :label-class="{
-                            'text-xl p-4 font-mono':true
-                        }"
-                        validation="required"
-                        validation-visibility="dirty"
-                        type="text" name="first_name" placeholder="First Name..."
-                />
-                <FormKit label="Last Name" 
-                        outer-class="mt-4 mb-4"
-                        :input-class="{
-                        'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
-                        }"
-                        :messages-class="{
-                        'text-red-500 p-4': true,
-                        }"
-                        :label-class="{
-                            'text-xl p-4 font-mono':true
-                        }"
-                        validation="required"
-                        validation-visibility="dirty"
-                        type="text" name="last_name" placeholder="Last Name..."
-                />
-            </FormKit>
-            <div v-else class="flex justify-center items-center">
-                <div class="w-full h-24 flex justify-center items-center ">
-                    <h1 class="text-3xl">User was created successfully 👍</h1>
-                </div>
+                    }"
+                    :label-class="{
+                        'text-xl p-4 font-mono':true
+                    }"
+                    validation="required"
+                    validation-visibility="dirty"
+                    type="text" name="username" placeholder="Username..."
+            />
+            <FormKit label="First Name" 
+                    outer-class="mt-4"
+                    :input-class="{
+                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    }"
+                    :messages-class="{
+                    'text-red-500 p-4': true,
+                    }"
+                    :label-class="{
+                        'text-xl p-4 font-mono':true
+                    }"
+                    validation="required"
+                    validation-visibility="dirty"
+                    type="text" name="first_name" placeholder="First Name..."
+            />
+            <FormKit label="Last Name" 
+                    outer-class="mt-4 mb-4"
+                    :input-class="{
+                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    }"
+                    :messages-class="{
+                    'text-red-500 p-4': true,
+                    }"
+                    :label-class="{
+                        'text-xl p-4 font-mono':true
+                    }"
+                    validation="required"
+                    validation-visibility="dirty"
+                    type="text" name="last_name" placeholder="Last Name..."
+            />
+        </FormKit>
+        <div v-else class="flex justify-center items-center">
+            <div class="w-full h-24 flex justify-center items-center ">
+                <h1 class="text-3xl">User was created successfully 👍</h1>
             </div>
-        </section>
+        </div>
+    </section>
     
-    </div>
 </template>

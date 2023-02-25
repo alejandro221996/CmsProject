@@ -9,7 +9,7 @@
 </style>
 <template>
     <div class="grow_animation">
-        <NuxtLink to="/pages">
+        <NuxtLink :to="`${path}`">
             <svg width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                 <g id="Icons">
@@ -34,3 +34,7 @@
         </NuxtLink>
     </div>
 </template>
+<script setup>
+const {path} =defineProps(['path'])
+
+</script>

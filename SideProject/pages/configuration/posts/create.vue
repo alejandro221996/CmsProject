@@ -23,7 +23,8 @@ definePageMeta({
 });
 </script>
 <template>
-    <div class="mt-8">
+    <h1 class="text-3xl mb-4 font-mono font-bold">Managing posts</h1>
+    <div class="mt-8 border-2 border-gray-300 rounded-lg p-10">
         <h1 class="text-3xl">Add new post</h1>
         <FormKit
             type="form"

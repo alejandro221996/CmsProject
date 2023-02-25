@@ -1,6 +1,6 @@
 <template>
     <div class="grow_animation">
-        <NuxtLink to="/media">
+        <NuxtLink :to="`${path}`">
             <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <path d="M960 1002.666667H64a42.666667 42.666667 0 0 1-42.666667-42.666667V64a42.666667 42.666667 0 0 1 42.666667-42.666667h896a42.666667 42.666667 0 0 1 42.666667 42.666667v896a42.666667 42.666667 0 0 1-42.666667 42.666667z" fill="#C6C6C6" />
                 <path d="M896 917.333333H128a21.333333 21.333333 0 0 1-21.333333-21.333333V128a21.333333 21.333333 0 0 1 21.333333-21.333333h768a21.333333 21.333333 0 0 1 21.333333 21.333333v768a21.333333 21.333333 0 0 1-21.333333 21.333333z" fill="#FFFFFF" />
@@ -11,3 +11,7 @@
         </NuxtLink>
     </div>
 </template>
+<script setup>
+const {path} =defineProps(['path'])
+
+</script>
