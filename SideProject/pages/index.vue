@@ -7,11 +7,11 @@ onMounted(() => {
 });
 const dataPage = {
   title: "Welcome to ",
-  description: "Esta es mi pagina para citas",
+  description: "Prueba de CMS con Nuxt",
   subtitle: "This is a test page",
   image: "https://i.imgur.com/4Z5wQ9r.png",
   url: "https://www.google.com",
-  company_name: "Phisyomel",
+  company_name: "PruebaCMS",
   company_url: "https://www.google.com",
   company_logo: "https://i.imgur.com/4Z5wQ9r.png",
 }
@@ -71,7 +71,7 @@ const qty_Posts= postsSection.length
       </p>
     </div>
     <div class="flex flex-col items-center justify-center w-full mt-6 mb-6 h-96 flex-1 px-20 text-center">
-      <div class="w-full bg-white bg-center bg-cover relative bg-no-repeat p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hero-image hero-pattern">
+      <div class="w-full bg-white bg-center bg-cover relative bg-no-repeat p-6  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hero-image hero-pattern">
         <div class="text-white absolute top-2/4 left-2/4 text-center -translate-x-2/4 -translate-y-2/4">
           <h1 class="text-6xl font-bold">{{ sectionHero.title }}</h1>
           <h3 class="text-4xl font-thin">{{ sectionHero.subtitle }}</h3>
@@ -80,7 +80,7 @@ const qty_Posts= postsSection.length
       </div>
     </div>
     <div class="flex flex-col items-center justify-center w-full mt-6 mb-6 h-96 flex-1 px-20 text-center">
-      <div :class="`grid md:grid-cols-3 sm:grid-cols-1 rounded-xl bg-indigo-300 gap-4 w-42 p-6`">
+      <div class='grid md:grid-cols-3 sm:grid-cols-1 rounded-xl bg-indigo-300 gap-4 w-42 p-6'>
           <div v-for="post in postsSection" :key="post.id">
               <a href="#" class="flex flex-col  items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="~/assets/images/login.png" alt="">

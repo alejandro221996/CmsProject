@@ -11,6 +11,10 @@ const User = {
 };
 const asideOptions = [
   {
+    name: 'Dashboard',
+    link: '/configuration',
+  },
+  {
     name: 'Home',
     link: '/configuration/home',
   },
@@ -93,6 +97,10 @@ const asideOptions = [
                       </div>
                       <div v-else-if="option.name==='Users'">
                         <IconsUserIcon :path="`${option.link}`"/>
+                        
+                      </div>
+                      <div v-else-if="option.name==='Dashboard'">
+                        <IconsStadisticsIcon :path="`${option.link}`"/>
                       </div>
                       <div v-else>
                         <IconsSettingsIcon :path="`${option.link}`"/>
