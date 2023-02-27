@@ -82,10 +82,6 @@ definePageMeta({
                     validation="required"
                 />
             </div>
-            <details>
-                <summary>Form data</summary>
-                <pre>{{ value }}</pre>
-            </details>
         </FormKit>
     </div>
 </template>

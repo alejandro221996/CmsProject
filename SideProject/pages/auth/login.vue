@@ -180,10 +180,6 @@ definePageMeta({
                         type="password" name="password" placeholder="Password..."
                     />
                 </div>
-                <details>
-                  <pre class="text-red-500">{{ value }}</pre>
-
-                </details>
             </FormKit>
             <div v-else class="completeLogin">User was created successfully 👍</div>
             <div class="flex h-24 w-3/4 justify-center items-center mt-4 text-slate-400">
