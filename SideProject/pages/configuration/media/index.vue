@@ -14,7 +14,7 @@ definePageMeta({
     <h1 class="text-3xl mb-4 font-mono font-bold">Managing media files</h1>
 
     <section class="border-2 border-gray-300 rounded-lg p-10">
-      <h1 class="text-3xl font-mono">Add new media file</h1>
+      <h1 class="text-2xl mb-10 font-mono font-semibold">Add new media file</h1>
       <FormKit
           type="form"
           v-if="!complete"
@@ -32,7 +32,7 @@ definePageMeta({
           accept=".pdf,.doc,.docx,.xml,.md,.csv"
           multiple="true"
           :input-class="{
-            ' border-2 w-2/5 border-gray-400 rounded-full p-4 font-mono': true,
+            ' border-2 w-2/5 border-gray-400 rounded-xl p-4 font-mono': true,
           }"
           :no-files-class="{
             'text-red-500 p-4 font-mono': true,
@@ -44,7 +44,7 @@ definePageMeta({
             'text-red-500 p-4 font-mono': true,
           }"
           :label-class="{
-            'text-xl p-4 font-mono':true
+            'text-xl font-mono':true
           }"
           :help-class="{
             'text-gray-500 p-4 font-mono': true,
@@ -62,13 +62,13 @@ definePageMeta({
       />
       <FormKit label="Description" 
           :input-class="{
-          'h-12 w-2/5 border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+          'h-12 w-2/5 border-2 border-gray-400 rounded-xl p-4 text-xl font-thin mt-2': true,
           }"
           :messages-class="{
           'text-red-500 p-4': true,
           }"
           :label-class="{
-              'text-xl p-4 font-mono':true
+              'text-xl font-mono':true
           }"
           :outer-class="{
               'mb-4 mt-4': true,
@@ -83,13 +83,13 @@ definePageMeta({
           rows="10"
           cols="54"
           :input-class="{
-          'border-2 rounded-3xl border-gray-400 text-xl font-thin mt-2 p-4': true,
+          'border-2 rounded-xl border-gray-400 text-xl font-thin mt-2 p-4': true,
           }"
           :messages-class="{
           'text-red-500 p-4': true,
           }"
           :label-class="{
-              'text-xl p-4 font-mono':true
+              'text-xl font-mono':true
           }"
           :outer-class="{
               'mb-4 mt-4': true,

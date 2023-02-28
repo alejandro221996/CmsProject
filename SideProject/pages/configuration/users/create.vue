@@ -52,18 +52,17 @@ definePageMeta({
             :submit-attrs="{
                 inputClass: 'w-72 h-12 bg-blue-500 text-white font-bold text-xl rounded-full mt-4',
             
-            }"
-            
+            }"            
         >
             <FormKit label="Email" 
                     :input-class="{
-                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    'w-96 h-12  border-2 border-gray-400 rounded-xl p-4 text-xl font-thin mt-2': true,
                     }"
                     :messages-class="{
                     'text-red-500 p-4': true,
                     }"
                     :label-class="{
-                        'text-xl p-4 font-mono':true
+                        'text-xl  font-mono':true
                     }"
                     validation="required"
                     validation-visibility="dirty"
@@ -72,13 +71,13 @@ definePageMeta({
             <FormKit label="Username" 
                     outer-class="mt-4"
                     :input-class="{
-                        'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                        'w-96 h-12  border-2 border-gray-400 rounded-xl p-4 text-xl font-thin mt-2': true,
                     }"
                     :messages-class="{
                         'text-red-500 p-4': true,
                     }"
                     :label-class="{
-                        'text-xl p-4 font-mono':true
+                        'text-xl font-mono':true
                     }"
                     validation="required"
                     validation-visibility="dirty"
@@ -87,13 +86,13 @@ definePageMeta({
             <FormKit label="First Name" 
                     outer-class="mt-4"
                     :input-class="{
-                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    'w-96 h-12  border-2 border-gray-400 rounded-xl p-4 text-xl font-thin mt-2': true,
                     }"
                     :messages-class="{
                     'text-red-500 p-4': true,
                     }"
                     :label-class="{
-                        'text-xl p-4 font-mono':true
+                        'text-xl  font-mono':true
                     }"
                     validation="required"
                     validation-visibility="dirty"
@@ -102,13 +101,13 @@ definePageMeta({
             <FormKit label="Last Name" 
                     outer-class="mt-4 mb-4"
                     :input-class="{
-                    'w-96 h-12  border-2 border-gray-400 rounded-full p-4 text-xl font-thin mt-2': true,
+                    'w-96 h-12  border-2 border-gray-400 rounded-xl p-4 text-xl font-thin mt-2': true,
                     }"
                     :messages-class="{
                     'text-red-500 p-4': true,
                     }"
                     :label-class="{
-                        'text-xl p-4 font-mono':true
+                        'text-xl font-mono':true
                     }"
                     validation="required"
                     validation-visibility="dirty"

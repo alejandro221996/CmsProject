@@ -12,8 +12,8 @@ definePageMeta({
 </script>
 <template>
    <h1 class="text-3xl mb-4 font-mono font-bold">Managing home page</h1>
-    <div class="mt-8 border-2 border-gray-300 rounded-lg p-10">
-        <h1 class="text-3xl font-mono font-bold">Add new home configuration</h1>
+    <section class="border-2 border-gray-300 rounded-lg p-10">
+        <h1 class="text-2xl font-mono font-bold">Add new home configuration</h1>
         <FormKit
             type="form"
             #default="{ value }"
@@ -25,7 +25,7 @@ definePageMeta({
             
         >
         <div class="mt-8 border-2 border-gray-300 rounded-lg p-10">
-            <h2 class="text-3xl font-bold">First section</h2>
+            <h2 class="text-2xl font-bold">First section</h2>
             <FormKit label="Title" 
                 :input-class="{
                 'border-2 border-gray-300 p-4 w-full rounded-xl font-mono': true,
@@ -62,7 +62,7 @@ definePageMeta({
             />
         </div>
         <div class="mt-8 border-2 border-gray-300 rounded-lg p-10">
-            <h2 class="text-3xl font-bold">Second section</h2>
+            <h2 class="text-2xl font-bold">Second section</h2>
             <FormKit label="Title" 
                 :input-class="{
                 'border-2 border-gray-300 p-4 w-full rounded-xl font-mono': true,
@@ -133,5 +133,5 @@ definePageMeta({
             />
         </div>
         </FormKit>
-    </div>
+    </section>
 </template>
