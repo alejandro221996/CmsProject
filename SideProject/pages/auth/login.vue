@@ -92,10 +92,17 @@
 .container_for_input__anchor a:hover {
   color: #17b0eb;
 }
+
+.eye-button{
+  height: 47px;
+  width: 48 px;
+}
 </style>
+
 <script>
 import { ref } from 'vue'
 import { setErrors } from '@formkit/vue'
+import { password } from '@formkit/inputs'
 const completeLogin = ref(false)
 const submitHandlerLogin = async (data) => {
       // We need to submit this as a multipart/form-data
@@ -122,6 +129,29 @@ const submitHandlerLogin = async (data) => {
       setErrors('loginForm', ['The server didn’t like our request.'])
     }
 }
+
+//Ocultar/mostrar password
+export default {
+    el: '#app',
+    data(){
+      return {
+        type: "password"
+      };
+    },
+    props:{
+      type: {type:String, default:"password"}
+    },
+    methods:{
+      showPassword() {
+        if(this.type === 'password') {
+          this.type = 'text'
+        } else {
+          this.type = 'password'
+        }
+    }
+	}
+}
+
 definePageMeta({
   layout: "auth-layout",
 });
@@ -164,21 +194,32 @@ definePageMeta({
                         type="text" name="username" placeholder="Username..."
                     />
                 </div>
-                <div class="w-full h-24 flex justify-center items-center">
-                    <FormKit label="Password"
-                        :input-class="{
-                        'w-72 h-12  border-2 border-black outline-none text-xl font-thin': true,
-                        }"
-                        :messages-class="{
-                        'text-red-500': true,
-                        }"
-                        :label-class="{
-                            'text-xl':true
-                        }"
-                        validation="required"
-                        validation-visibility="dirty"
-                        type="password" name="password" placeholder="Password..."
-                    />
+                <div class="w-full h-24 flex justify-center items-center" id="app">
+                      <FormKit label="Password"
+                          :input-class="{
+                          'w-60 h-12  border-2 border-black outline-none text-xl font-thin': true,
+                          }"
+                          :messages-class="{
+                          'text-red-500': true,
+                          }"
+                          :label-class="{
+                              'text-xl':true
+                          }"
+                          :type="this.type"
+                          validation="required"
+                          validation-visibility="dirty"
+                          name="password" placeholder="Password..."
+                      />
+                  <div class="w-12 h-24 flex items-center">
+                    <label type="button" @click="showPassword" :class="{
+                          'w-60 h-12  border-2 border-black outline-none text-xl font-thin mt-7': true,
+                          }">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </label>
+                  </div>
                 </div>
             </FormKit>
             <div v-else class="completeLogin">User was created successfully 👍</div>

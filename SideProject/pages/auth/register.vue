@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { setErrors } from '@formkit/vue'
 const complete = ref(false)
 
+
 const submitHandler = async (data) => {
     // We need to submit this as a multipart/form-data
     // to do this we use the FormData API.
@@ -25,7 +26,9 @@ const submitHandler = async (data) => {
   } else {
     setErrors('registerForm', ['The server didn’t like our request.'])
   }
+
 }
+
 definePageMeta({
   layout: "auth-layout",
 });
@@ -59,7 +62,7 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Email" 
                         :input-class="{
-                        ' text-white border-2 rounded-xl border-black outline-none text-xl font-thin p-2 mb-2': true,
+                        ' border-2 rounded-xl border-black outline-none text-xl font-thin p-2 mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
@@ -75,7 +78,7 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Username"
                         :input-class="{
-                        'text-white border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
@@ -91,7 +94,7 @@ definePageMeta({
                 <div class="flex justify-center items-center">
                     <FormKit label="First Name"
                         :input-class="{
-                        'text-white border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
@@ -107,7 +110,7 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Last Name"
                         :input-class="{
-                        'text-white border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
@@ -123,7 +126,7 @@ definePageMeta({
                 <div class="w-full h-24 flex justify-center items-center">
                     <FormKit label="Password"
                         :input-class="{
-                        'text-white border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
