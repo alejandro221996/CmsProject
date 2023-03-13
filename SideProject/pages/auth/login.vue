@@ -210,7 +210,7 @@ definePageMeta({
                           'w-60 h-12  border-2 border-black outline-none text-xl font-thin': true,
                           }"
                           :messages-class="{
-                          'text-red-500': true,
+                          'text-red-500 fixed': true,
                           }"
                           :label-class="{
                               'text-xl':true
