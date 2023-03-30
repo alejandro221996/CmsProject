@@ -1,4 +1,5 @@
-<script setup>
+<script >
+    import SavedModal from '~/pages/configuration/posts/AddFieldModal.vue'
     onBeforeMount(() => {
         if (!localStorage.getItem("token")) {
             // redirect to home page
@@ -13,6 +14,17 @@
     const UserObj = Users.results
     //Count the number of users
     const count = UserObj.length;
+
+
+
+    export default {
+    components: { SavedModal },
+    data() {
+        return {
+        showModal: false,
+        }
+    },
+    }
 </script >
 <template>
     <h1 class="text-3xl mb-4 font-mono font-bold">Managing posts</h1>
@@ -44,7 +56,11 @@
             </FormKit>
         </div>
         <div class="ml-1 mb-3 w-full border-2 border-gray-300 rounded-lg p-10">
-            <h2 class="mb-2">Create post</h2>
+            <header>
+                <SavedModal v-show="showModal" @close-modal="showModal = false" />
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" @click="showModal = true">Add field</button>
+                <h2 class="mb-2">Create post</h2>
+            </header>
             <FormKit
                 type="form"
                 id="createPostForm"
