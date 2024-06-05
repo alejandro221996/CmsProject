@@ -62,13 +62,13 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Email" 
                         :input-class="{
-                        ' border-2 rounded-xl border-black outline-none text-xl font-thin p-2 mb-2': true,
+                        'w-72 border-2 rounded-xl border-black outline-none text-xl font-thin p-2 mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
                         }"
                         :label-class="{
-                            'text-xl p-4':true
+                            'text-xl p-14':true
                         }"
                         validation="required"
                         validation-visibility="dirty"
@@ -78,13 +78,13 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Username"
                         :input-class="{
-                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'w-72 border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
                         }"
                         :label-class="{
-                            'text-xl p-4':true
+                            'text-xl p-14':true
                         }"
                         validation="required"
                         validation-visibility="dirty"
@@ -94,13 +94,13 @@ definePageMeta({
                 <div class="flex justify-center items-center">
                     <FormKit label="First Name"
                         :input-class="{
-                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'w-72 border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
                         }"
                         :label-class="{
-                            'text-xl p-4':true
+                            'text-xl p-14':true
                         }"
                         validation="required"
                         validation-visibility="dirty"
@@ -110,13 +110,13 @@ definePageMeta({
                 <div class=" flex justify-center items-center">
                     <FormKit label="Last Name"
                         :input-class="{
-                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'w-72 border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
                         }"
                         :label-class="{
-                            'text-xl p-4':true
+                            'text-xl p-14':true
                         }"
                         validation="required"
                         validation-visibility="dirty"
@@ -126,13 +126,13 @@ definePageMeta({
                 <div class="w-full h-24 flex justify-center items-center">
                     <FormKit label="Password"
                         :input-class="{
-                        'border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
+                        'w-72 border-2 rounded-xl border-black outline-none text-xl font-thin p-2  mb-2': true,
                         }"
                         :messages-class="{
                         'text-red-500': true,
                         }"
                         :label-class="{
-                            'text-xl p-4':true
+                            'text-xl p-14':true
                         }"
                         validation="required"
                         validation-visibility="dirty"
